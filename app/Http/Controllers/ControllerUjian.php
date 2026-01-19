@@ -20,7 +20,8 @@ class ControllerUjian extends Controller
     {
         $data = Modelujian::create([
             'nama' => $request->nama,
-            'nim'  => $request->nim,
+            'status'  => $request->status,
+            'tanggal_lahir' =>$request->tanggal_lahir,
         ]);
 
         return response()->json([

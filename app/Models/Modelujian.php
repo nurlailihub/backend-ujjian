@@ -9,10 +9,12 @@ class Modelujian extends Model
 {
     use HasFactory;
 
-    protected $table = 'mahasiswa';
+    protected $table = 'absensi';
 
     protected $fillable = [
         'nama',
-        'nim'
+        'status',
+        'tanggal_lahir'
+
     ];
 }
